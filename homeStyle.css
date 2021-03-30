@@ -416,7 +416,7 @@ a:active {
 =========================== */
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   #intro
   {
     height: 20vh;
@@ -434,7 +434,7 @@ a:active {
   
 }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   
   #who-we-are .column {
     float: left;
@@ -493,7 +493,7 @@ a:active {
   
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .navbar_TOP  :not(:first-child) {display: none;}
   .navbar_TOP a.icon {
     float: right;
@@ -501,7 +501,7 @@ a:active {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .navbar_TOP.responsive {position: relative;}
   .navbar_TOP.responsive .icon {
     position: absolute;
