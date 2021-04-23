@@ -31,7 +31,7 @@ body {
   line-height: 1.25;
   text-align: left;
   position: absolute;
-  left: 165px;
+  left: 210px;
   top: -5px;
 }
 .navbar img {
@@ -177,11 +177,27 @@ background-color: rgb(4, 85, 114);
   font-family: 'Century Gothic';
 }
 
+@media (max-width: 575.98px) {
+  .logo-header {
+    width: 75px;
+  }
+
+  .brand-name-style 
+  {
+    font-size: 20px;
+    position: absolute;
+   
+    left: 85px;
+  }
+  .training-title h1 {
+    font-size: 40px;
+
+  }
 .training-title img {
   width: 120px;
   margin-bottom: 20px;
 }
-
+}
 #span1 {
   color: #fd6913;
   font-size: 60px;
@@ -210,7 +226,7 @@ background-color: rgb(4, 85, 114);
 .sidiv {
   position: relative;
   top: calc(50%);
-  left: calc(7%);
+  left: calc(15%);
 }
 
 .sidiv::after {
@@ -265,6 +281,12 @@ background-color: rgb(4, 85, 114);
   width: 60%;
   margin-left: 20%;
 }
+@media (max-width: 575.98px) {
+  #gmap {
+    position: relative;
+    left: 37%;
+  }
+}
 /* footer style
 =========================== */
 .logo-footer {
@@ -303,15 +325,16 @@ a.content {
 @media (max-width: 575.98px) {
   .sidiv {
     position: relative;
-    top: calc(30px);
-    left: calc(110px);
+    top: calc(50%);
+    left: calc(-30px);
   }
   .sidiv::after {
     border-left: 150px solid transparent;
     border-right: 150px solid transparent;
     border-bottom: 0px solid white;
   }
-}
+ 
+  }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .sidiv {
@@ -326,7 +349,7 @@ a.content {
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1000.98px) {
   .sidiv {
     position: relative;
     top: calc(50%);
@@ -336,9 +359,10 @@ a.content {
     border-left: 400px solid transparent;
     border-right: 400px solid transparent;
   }
+ 
 }
 
-@media (min-width: 1200px) and (max-width: 1330px) {
+@media (min-width: 10001px) and (max-width: 1330px) {
   .sidiv {
     position: relative;
     top: calc(50%);
