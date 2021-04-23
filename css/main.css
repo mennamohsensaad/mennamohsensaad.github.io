@@ -1,516 +1,347 @@
 body {
-    background: url(img/bg.png) repeat;
+  background-color: rgb(236, 235, 235);
 }
-
 /* Header style
 =========================== */
 
-.page__header {
-    background: linear-gradient(to right, white, #fd6913);
-    position: fixed;
-    top: 0;;
-    width: 100%;
-    z-index: 5;
-    display: block;
-    height: 80px;
-
-}
-
 .logo-header {
-    margin-left: 70px;
-    margin-top: -10px;
-
+  margin-left: 15px;
 }
-
-.logo-name {
-    font-size: 22px;
-    font-family: "JFFlat";
-    color: rgb(115, 115, 115);
-    line-height: 1.25;
-    text-align: left;
-    position: absolute;
-    left: 170px;
-    top: -0.721px;
+.background-color {
+  background: linear-gradient(to right, white 1%, #fd6913 70%);
 }
 
 /* Navigation Styles*/
 /* --- menu --- */
-
-ul {
-    list-style-type: none;
-
+.navbar-text-style a {
+  color: white;
+  font-family: 'gothic';
+  font-weight: bold;
 }
 
-.navbar__menu ul {
-    display: block;
-    text-align: right;
-    margin-top: -70px;
-
+#active {
+  width: 80px;
+  background-color: #fd6913;
+  border-radius: 45%;
 }
-
-.navbar_TOP li {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 5px 20px;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
+.brand-name-style {
+  font-size: 22px;
+  font-family: 'JFFlat';
+  color: rgb(115, 115, 115);
+  line-height: 1.25;
+  text-align: left;
+  position: absolute;
+  left: 180px;
+  top: -5px;
 }
-
-.navbar_TOP li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 5px 5px;
-    text-decoration: none;
-
+.navbar img {
+  margin-left: -20px;
+  margin-top: -10px;
 }
-
-.navbar_TOP li a:hover:not(.active) {
-    background-color: rgb(4, 85, 114);;
+.icon-color
+{
+background-color: rgb(4, 85, 114);
 }
-
-.navbar_TOP .active {
-    border-radius: 20px;
-    width: 50px;
-    background-color: #fd6913;
-
-}
-
-.navbar_TOP a.icon {
-    display: none;
-    font-size: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    padding: 20px;
-    margin-top: -20px;
-
-}
-
 /* Intro
 =========================== */
-
-#intro {
-    width: 100%;
-    height: 30vh;
-    position: relative;
-    background: url(img/introimage.png) center;
-    background-size: cover;
-    background-color: rgb(4, 85, 114);
-    margin-top: 80px;
+.intro-content h2 {
+  font-family: 'Century Gothic';
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  top: 140px;
+  left: 0;
+  right: 0;
 }
+.parallax-intro {
+  /* The image used */
+  width: 100%;
+  height: 30vh;
 
-.intro-content {
-    font-size: 30px;
-    font-family: "Myriad Pro";
-    color: white;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+  background-image: url(../images/introimage.png);
+  position: relative;
+  background-color: rgb(4, 85, 114);
+  background-size: 100% 60%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-top: 80px;
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+/* @media only screen and (max-device-width: 1000px) {
+    .parallax-intro{
+      background-attachment: scroll;
+    }
+  } */
+.span-color {
+  color: #f87021;
 }
 
 /* who we are section 
 =========================== */
 
-#who-we-are {
-    background: url(img/bg.png) repeat;
-    text-align: center;
-    margin-top: -100px;
-
-}
-
-/* Float four columns side by side */
-.column {
-    float: left;
-    width: 30%;
-    height: 300px;
-    padding: 0 20px;
-}
-
-/* Remove extra  margins, due to padding */
-.row {
-    margin: 230px -5px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Style the cards */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: white;
-    border-radius: 5%;
-}
-
 .Info-icon {
-    position: relative;
-    top: calc(50%);
-    left: calc(20%);
-    transform: translate(-50%, -50%);
+  width: 40%;
+  position: relative;
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -50%);
 }
-
-.card h3 {
-    font-size: 40px;
-    margin-top: -30px;
-    font-family: "Century Gothic";
-    color: rgb(0, 68, 92);
-    font-weight: bold;
-    text-align: center
-
+.media-left,
+.media-body {
+  display: table-cell;
+  vertical-align: top;
 }
-
-.card p {
-    font-size: 15px;
-    margin-top: -30px;
-    text-align: left;
-    font-family: "Century Gothic";
-    color: rgb(64, 64, 64);
-
-}
-
-.our-values {
-    margin-top: -32px;
-    font-size: 15px;
-    font-family: "Century Gothic";
-    color: rgb(64, 64, 64);
-    text-align: left;
-
-}
-
-.our-values li {
-    text-align-last: left;
-}
-
-.our-values li::before {
-
-    content: "• ";
-    color: #fd6913;
-
-}
-
-.read-more {
-    font-family: "Century Gothic";
-    border-radius: 20px;
-    background-color: #fd6913;
-    border: none;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transform: translate(0, 50px);
-    font-size: 16px;
-    margin: 10px 6px;
-    width: 160px;
-}
-
-/* our training
-=========================== */
-
-#our-training {
-    background-color: white;
-    text-align: center;
-    padding: 50px;
-
-}
-
-#our-training .trainng-title img {
-    width: 120px;
-}
-
-#our-training h1 {
-    font-family: "Century Gothic";
-    color: rgb(0, 68, 92);;
-    font-size: 60px;
-    font-weight: bold;
-}
-
-#span1 {
-    color: #fd6913;
-    font-size: 60px;
-    font-family: "Century Gothic";
-    font-weight: bold;
-}
-
-.box {
-    /*margin-bottom: 85px;*/
-    font-family: "gothic";
-    color: rgb(0, 68, 92);;
-    font-size: 25px;
-    outline: 1px solid rgb(238, 238, 238);
-    max-width: 870px;
-    margin-left: 15%;
-    line-height: 40px;
-    letter-spacing: -0.5px;
-}
-
-#span2 {
-    color: #fd6913;
-    font-size: 25px;
-    font-family: "gothic";
-
-}
-
-.grid-container {
-
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
-
-}
-
-.grid-container > .item {
-    background-color: white;
-    text-align: center;
-    font-size: 20px;
-
-}
-
-.media-left, .media-body {
-    display: table-cell;
-    vertical-align: top;
-}
-
-.media-left img {
-    margin-top: 30px;
+.col .media-left img {
+  margin-top: 10px;
 }
 
 .media-body h4 {
-    font-size: 20px;
-    font-family: "Century Gothic";
-    color: rgb(242, 112, 36);
-    font-weight: bold;
-
+  font-size: 20px;
+  font-family: 'Century Gothic';
+  color: rgb(242, 112, 36);
+  font-weight: bold;
 }
 
 .media-body p {
-    font-size: 16px;
-    font-family: "Century Gothic";
-    color: rgb(64, 64, 64);
-
+  font-size: 16px;
+  font-family: 'Century Gothic';
+  color: rgb(64, 64, 64);
 }
 
 .media-body {
-    overflow: hidden;
-    margin-top: 15px;
-    width: 70%;
-    text-align: left;
+  overflow: hidden;
+  margin-top: 15px;
+  width: 70%;
+  text-align: left;
+}
+.spaing-bottom {
+  margin-bottom: 120px;
+}
+.spaing-justify {
+  margin-top: -50px;
+}
+.our-values ul {
+  list-style-type: none;
+}
+.our-values li::before {
+  content: '•   ';
+  color: #fd6913;
+}
+.read-more {
+  font-family: 'Century Gothic';
+  border-radius: 20px;
+  background-color: #fd6913;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, 90%);
+  width: 160px;
+}
+/* our training
+=========================== */
+
+.card-style {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+  margin-top: -20px;
+}
+.card-text-syle {
+  font-size: 40px;
+  font-family: 'Century Gothic';
+  color: rgb(0, 68, 92);
+  font-weight: bold;
+  text-align: center;
+}
+.card-text {
+  font-size: 17px;
+  text-align: left;
+  font-family: 'Century Gothic';
+  color: rgb(64, 64, 64);
+}
+.training-title,
+.training-title h1 {
+  text-align: center;
+  color: rgb(0, 68, 92);
+  font-weight: bold;
+  font-size: 60px;
+  font-family: 'Century Gothic';
+}
+
+.training-title img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+#span1 {
+  color: #fd6913;
+  font-size: 60px;
+  font-family: 'Century Gothic';
+  font-weight: bold;
+}
+.box {
+  /*margin-bottom: 85px;*/
+  font-family: 'gothic';
+  color: rgb(0, 68, 92);
+  font-size: 25px;
+  outline: 1px solid rgb(238, 238, 238);
+  max-width: 870px;
+  margin-left: 10%;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#span2 {
+  color: #fd6913;
+  font-size: 25px;
+  font-family: 'gothic';
+}
+
+.sidiv {
+  position: relative;
+  top: calc(50%);
+  left: calc(7%);
+}
+
+.sidiv::after {
+  position: absolute;
+  content: '';
+  align-items: center;
+  top: -90px;
+  width: 0px;
+  height: 0px;
+  border-left: 400px solid transparent;
+  border-right: 400px solid transparent;
+  border-bottom: 100px solid white;
 }
 
 #Business-readmore {
-    font-size: 16px;
-    font-family: "Century Gothic";
-    background-color: white;
-    color: rgb(0, 68, 92);
-    padding: 8px 12px;
-    outline: 1px solid rgb(0, 68, 92);
-    max-width: 200px;
-
-}
-
-a {
-    color: #4b5056;
-    text-decoration: none;
-}
-
-a:active {
-    outline: 0;
-    text-decoration: none;
-}
-
-/* footer style
-=========================== */
-
-footer {
-
-    padding: 8px;
-    background-color: rgb(0, 68, 92);;
-    height: 10vh;
-}
-
-.title {
-    text-align: center;
-    margin-top: 20px;
-    margin-right: 500px;
-    font-family: "Century Gothic";
-    font-size: 15px;
-    color: white;
-}
-
-.logo-footer img {
-    margin-top: -47px;
-    margin-left: 170vh;
-
+  font-size: 16px;
+  font-family: 'Century Gothic';
+  background-color: white;
+  color: rgb(0, 68, 92);
+  padding: 8px 12px;
+  outline: 1px solid rgb(0, 68, 92);
+  max-width: 200px;
 }
 
 /* map  style
 =========================== */
 
-#map i {
-    border: 7px solid #FFF;
-    background-color: #00445c;
-    border-radius: 50%;
-    padding: 18px 29px;
-    color: #FFF;
-    margin-bottom: 0px;
-    position: relative;
-    top: -45px;
-    left: 45%;
+#gmap {
+  border: 7px solid #fff;
+  background-color: #00445c;
+  border-radius: 50%;
+  max-width: 105px;
+  padding: 15px 35px;
+  margin-bottom: 0px;
+  position: relative;
+  top: -60px;
+  left: 45%;
+}
+#gmap-i {
+  color: #fff;
+  position: relative;
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -10%);
 }
 
-#map hr {
-    margin-top: -100px;
-    margin-bottom: 0;
-    border: 0;
-    border-top: 2px solid #00445c;
-    width: 35%;
+#gmap-hr {
+  margin-top: -100px;
+  margin-bottom: 0;
+  border: 0;
+  border-top: 2px solid #00445c;
+  width: 60%;
+  margin-left: 20%;
+}
+/* footer style
+=========================== */
+.logo-footer {
+  padding-left: 70%;
 }
 
-/* mobile styles
+.footer {
+  overflow: hidden;
+  background-color: rgb(0, 68, 92);
+}
+.footer a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+a.content {
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 70%;
+  text-align: center;
+  color: white;
+}
+
+.footer-right {
+  float: right;
+  margin-right: 20px;
+}
+
+/* media query styles
 =========================== */
 
-@media only screen and (max-width: 800px) {
-    #intro {
-        height: 20vh;
-    }
-
-    #intro .intro-content {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    #map hr {
-        margin-right: 130px;
-    }
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .sidiv {
+    position: relative;
+    top: calc(30px);
+    left: calc(110px);
+  }
+  .sidiv::after {
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 0px solid white;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .sidiv {
+    position: relative;
+    top: calc(50%);
+    left: calc(-30px);
+  }
+  .sidiv::after {
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+  }
 }
 
-@media only screen and (max-width: 800px) {
-
-    #who-we-are .column {
-        float: left;
-        width: 90%;
-        height: 300px;
-        padding: 100px 40px;
-    }
-
-    #who-we-are .row {
-        margin-top: 100px;
-    }
-
-    #our-training {
-        margin-top: -150px;
-    }
-
-    #our-training .grid-container {
-        grid-template-columns: auto;
-        margin-left: -50px;
-
-    }
-
-    #our-training .trainng-title img {
-        width: 30%;
-    }
-
-    #our-training .trainng-title h1,
-    #our-training .trainng-title #span1 {
-        font-size: 50px;
-    }
-
-    footer .title {
-        text-align: left;
-        margin-top: 20px;
-        margin-right: -10px;
-        font-size: 13px;
-        width: 350px;
-
-    }
-
-    footer .logo-footer img {
-        margin-top: -110px;
-        margin-left: 380px;
-        width: 15%;
-    }
-
-    #our-training .box {
-        font-size: 20px;
-        margin-left: -2%;
-    }
-
-    #our-training #span2 {
-        font-size: 20px;
-    }
-
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .sidiv {
+    position: relative;
+    top: calc(50%);
+    left: calc(-55px);
+  }
+  .sidiv::after {
+    border-left: 400px solid transparent;
+    border-right: 400px solid transparent;
+  }
 }
 
-@media screen and (max-width: 800px) {
-    .navbar_TOP :not(:first-child) {
-        display: none;
-    }
-
-    .navbar_TOP a.icon {
-        float: right;
-        display: block;
-    }
+@media (min-width: 1200px) and (max-width: 1330px) {
+  .sidiv {
+    position: relative;
+    top: calc(50%);
+    left: calc(150px);
+  }
 }
-
-@media screen and (max-width: 800px) {
-    .navbar_TOP.responsive {
-        position: relative;
-    }
-
-    .navbar_TOP.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-        font-size: 30px;
-        margin-top: -80px;
-
-    }
-
-    .navbar_TOP.responsive li {
-        float: none;
-        display: block; /*for phones and tablet change list from inline-block(coloums) to be block (rows)*/
-        text-align: left;
-        background: linear-gradient(to right, white, #fd6913);
-        width: 100%;
-    }
-
-    .navbar_TOP.responsive a {
-        text-align: left;
-        color: rgb(4, 85, 114);
-    }
-
-    .navbar_TOP.responsive li a:hover:not(.active) {
-        background-color: #fd6913;
-        color: white;
-    }
-
-    .navbar_TOP.responsive .active {
-        border-radius: 20px;
-        width: 50px;
-        background-color: #fd6913;
-
-    }
-
-    .navbar_TOP.responsive {
-
-        margin-top: -15px;
-
-    }
-}
-
-
